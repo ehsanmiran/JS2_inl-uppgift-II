@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-center mb-3">Our Products</h2><hr>
+  <h2 class="text-center mb-3 mt-3">Our Products</h2><hr>
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
     <ProductCard v-for ="product in products" :key="product._id" :product="product"/>
   </div>
