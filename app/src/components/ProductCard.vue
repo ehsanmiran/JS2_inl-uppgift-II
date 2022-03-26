@@ -8,8 +8,17 @@
           </router-link>
       </div>
       <div class="card-body">
-        <h5 class="card-title">{{ product.name }}</h5><hr>
+        <h5 class="card-title">{{ product.name }}</h5>
+        <h6 class="card-title text-danger">Price: {{ product.price }} Kr</h6><hr>
         <p class="card-text">{{ product.short }}</p>
+        <div  class="d-grid gap-2">
+          <router-link
+            type="button"
+            class="btn btn-warning btn-rounded"
+            :to="{ name: 'productDetails', params: { id: product._id }}">
+            See Details
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
