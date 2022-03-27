@@ -4,12 +4,10 @@ export default {
   state: {
     products: [],
     product: null,
-    cart: []
   },
   getters: {
     products: state => state.products,
     product: state => state.product,
-    cart: state => state.cart
   },
   mutations: {
     SET_PRODUCTS: (state, products) => {
@@ -17,9 +15,6 @@ export default {
     },
     SET_PRODUCT: (state, product) => {
       state.product = product
-    },
-    SET_CART: (state, cart) => {
-      state.cart = cart
     }
   },
   actions: {

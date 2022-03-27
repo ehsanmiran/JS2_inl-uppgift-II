@@ -1,5 +1,6 @@
 <template>
-  <h2 class="text-center mb-3 mt-3">Your Shopping Cart </h2><hr>
+  <ShoppingCart />
+<!--   <h2 class="text-center mb-3 mt-3">Your Shopping Cart </h2><hr>
   <div class="container" style="padding: 30px">
     <div class="row d-flex justify-content-center">
       <div class="list-group col-8">
@@ -31,10 +32,15 @@
         <button @click="checkout()" type="button" class="btn btn-warning btn-lg btn-rounded btn-block mt-4">Checkout</button>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
-import { mapGetters, mapActions } from "vuex";
+import ShoppingCart from '../components/shoppingCart/ShoppingCart.vue'
+export default {
+  component: { ShoppingCart },
+  name: 'ShoppingCartView'
+}
+/* import { mapGetters, mapActions } from "vuex";
 export default {
   name: "CartContents",
   data() {
@@ -65,7 +71,7 @@ export default {
   mounted() {
     this.calcPrice();
   },
-};
+}; */
 </script>
 <style>
 </style>
