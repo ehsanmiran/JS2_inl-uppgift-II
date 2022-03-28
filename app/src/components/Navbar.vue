@@ -38,7 +38,6 @@
       </div>
       <!-- Collapsible wrapper -->
 
-
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Avatar -->
@@ -73,7 +72,7 @@
       </div>
       <div>
         <a>
-          <router-link class="nav-link text-reset" to="/cartcontents">
+          <router-link class="nav-link text-reset" to="/shoppingCart">
             <i class="fas fa-shopping-cart"></i>
             <span class="badge rounded-pill badge-notification bg-danger">1</span>
           </router-link>

@@ -1,6 +1,5 @@
 <template>
-  <!-- <ShoppoingCartProduct v-for="item in shoppingCart" /> -->
-  shopping cart
+  <div>product</div>
 </template>
 
 <script>
