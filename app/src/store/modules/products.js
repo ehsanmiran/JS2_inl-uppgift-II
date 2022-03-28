@@ -3,11 +3,11 @@ import axios from '@/axios'
 export default {
   state: {
     products: [],
-    product: null,
+    product: null
   },
   getters: {
     products: state => state.products,
-    product: state => state.product,
+    product: state => state.product
   },
   mutations: {
     SET_PRODUCTS: (state, products) => {

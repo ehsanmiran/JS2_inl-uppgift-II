@@ -1,6 +1,7 @@
 <template>
-  <h2 class="text-center mb-3 mt-3">Home Page</h2><hr>
-
+  <div class="home">
+    <h1>home</h1>
+  </div>
 </template>
 
 <script>

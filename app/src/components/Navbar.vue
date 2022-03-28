@@ -38,6 +38,7 @@
       </div>
       <!-- Collapsible wrapper -->
 
+
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Avatar -->
@@ -70,14 +71,24 @@
           </li>
         </ul>
       </div>
-      <div>
-        <a>
-          <router-link class="nav-link text-reset" to="/shoppingCart">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="badge rounded-pill badge-notification bg-danger">1</span>
-          </router-link>
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
         </a>
-
+        <div
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          SHOPPINGCART
+        </div>
       </div>
       
     </div>
