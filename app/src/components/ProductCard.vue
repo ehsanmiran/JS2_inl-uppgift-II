@@ -11,7 +11,7 @@
         <h5 class="card-title">{{ product.name }}</h5>
         <h6 class="card-title text-danger">Price: {{ product.price }} SEK</h6><hr>
         <p class="card-text">{{ product.short }}</p>
-        <div  class="d-grid gap-2">
+        <div class="d-grid gap-2">
           <router-link
             type="button"
             class="btn btn-warning btn-rounded"
