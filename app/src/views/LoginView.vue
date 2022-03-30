@@ -2,7 +2,7 @@
 
   <form @submit.prevent="handleSubmit">
     <div class="row d-flex justify-content-center">
-      <div class="col-5 text-left login-form-container">
+      <div class="col-6 text-left login-form-container">
         <div class="d-flex justify-content-center">
           <img src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png" width="150" alt="">
         </div>
@@ -15,7 +15,7 @@
             <label><strong>Password:</strong></label>
             <input type="password" class="form-control shadow" placeholder="Enter your password, please!" v-model="password" />
           </div>
-          <button @click="login()" type="submit" class="btn btn-warning btn-block btn-rounded">Login</button>
+          <button type="submit" class="btn btn-warning btn-block btn-rounded">Login</button>
       </div>
     </div>
   </form>

@@ -42,7 +42,6 @@
     <!-- Right elements -->
     <div class="d-flex align-items-center"  v-if="user">
       <!-- Avatar -->
-      <!-- <div class="dropdown me-3" v-if="user"> -->
       <div class="dropdown me-3">
         <a
           class="dropdown-toggle d-flex align-items-center text-reset"
@@ -53,26 +52,13 @@
           aria-expanded="false"
         >
         <strong class="d-none d-sm-block me-1">Hi Ehsan</strong>
-        <img
-        src="../assets/avatar.png"
-        class="rounded-circle"
-        height="22"
-        loading="lazy"
-        />
+        <img src="../assets/avatar.png" class="rounded-circle" height="22" loading="lazy" />
         </a>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuAvatar"
-        >
-          <li>
-            <a class="dropdown-item" href="#">My profile</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Logout</a>
-          </li>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+          <li><a class="dropdown-item" href="#">My profile</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
         </ul>
       </div>
-      <!-- <router-link to="/login" v-else class="text-reset"><strong>Login to start handle</strong></router-link> -->
       <div class="dropdown">
         <a
           class="text-reset me-3 dropdown-toggle"

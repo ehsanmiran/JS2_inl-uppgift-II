@@ -17,6 +17,7 @@ export default {
   actions: {
     login: async ({commit}, user) => {
       const res = await axios.post('users/login', user)
+      console.log(res)
       if(res.status === 200) {
         commit('SET_USER', res.data.token)
       }
