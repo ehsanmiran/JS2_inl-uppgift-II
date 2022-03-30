@@ -40,8 +40,9 @@
 
 
     <!-- Right elements -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center"  v-if="user">
       <!-- Avatar -->
+      <!-- <div class="dropdown me-3" v-if="user"> -->
       <div class="dropdown me-3">
         <a
           class="dropdown-toggle d-flex align-items-center text-reset"
@@ -71,6 +72,7 @@
           </li>
         </ul>
       </div>
+      <!-- <router-link to="/login" v-else class="text-reset"><strong>Login to start handle</strong></router-link> -->
       <div class="dropdown">
         <a
           class="text-reset me-3 dropdown-toggle"
@@ -90,8 +92,8 @@
           <ShoppingCart />
         </div>
       </div>
-      
     </div>
+    <router-link to="/login" v-else class="text-reset"><strong>Login to start</strong></router-link>
     <!-- Right elements -->
 
     </div>
