@@ -14,7 +14,7 @@
       </div>
     </div>
     <div>
-      <button class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark">remove</button>
+      <button class="btn btn-outline-danger btn-rounded" @click.stop data-mdb-ripple-color="dark">remove</button>
     </div>
   </div>
   <div class="dropdown-divider"></div>
