@@ -40,7 +40,7 @@
 
 
     <!-- Right elements -->
-    <div class="d-flex align-items-center"  v-if="user">
+    <div class="d-flex align-items-center"  v-if="loggedIn">
       <!-- Avatar -->
       <div class="dropdown me-3">
         <a
@@ -55,8 +55,8 @@
         <img src="../assets/avatar.png" class="rounded-circle" height="22" loading="lazy" />
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-          <li><a class="dropdown-item" href="#">My profile</a></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
+          <li><router-link class="dropdown-item" to="/userprofile">My profile</router-link></li>
+          <li><router-link class="dropdown-item" @click="logout" to="/">Logout</router-link></li>
         </ul>
       </div>
       <div class="dropdown">
@@ -87,13 +87,16 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import ShoppingCart from './shoppingCart/ShoppingCart.vue'
   export default {
     components: { ShoppingCart },
     name: 'PrimaryNavigation',
     computed: {
-      ...mapGetters(['itemsCounter'])
+      ...mapGetters(['itemsCounter', 'loggedIn'])
+    },
+    methods: {
+      ...mapActions(['logout'])
     }
   }
 </script>
