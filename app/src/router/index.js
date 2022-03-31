@@ -47,7 +47,9 @@ router.beforeEach((to, from, next) => {
   if(authorize) {
     if(!loggedIn) next({ name: 'login'})
     else next()
-  }next()
+  } else {
+    next()
+  }
 })
 
 export default router

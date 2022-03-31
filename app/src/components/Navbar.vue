@@ -51,7 +51,7 @@
           data-mdb-toggle="dropdown"
           aria-expanded="false"
         >
-        <strong class="d-none d-sm-block me-1">Hi Ehsan</strong>
+        <strong class="d-none d-sm-block me-1">Hi users.firstName</strong>
         <img src="../assets/avatar.png" class="rounded-circle" height="22" loading="lazy" />
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
