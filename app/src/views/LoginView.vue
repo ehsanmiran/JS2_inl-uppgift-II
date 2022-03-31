@@ -31,7 +31,7 @@ export default {
       password: ''
     }
   },
-  methodes: {
+  methods: {
     ...mapActions(['login']),
     handleSubmit() {
       if(this.email.trim() === '' || this.password.trim() === '') {
