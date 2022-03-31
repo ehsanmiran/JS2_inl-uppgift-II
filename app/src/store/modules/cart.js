@@ -7,7 +7,7 @@ export default {
     itemsCounter: state => {
       let items = 0
       state.cart.forEach(item => {
-          items += item.quantity
+        items += item.quantity
       })
       return items
     },
@@ -35,6 +35,5 @@ export default {
     addToCart: ({commit}, { product, quantity }) => {
       commit('ADD_TO_CART', { product, quantity })
     }
-  
   }
 }
